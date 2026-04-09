@@ -58,3 +58,113 @@ a{color:inherit;text-decoration:none}
 @keyframes whatsappPulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.45),0 16px 38px rgba(15,23,42,.45)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0),0 16px 38px rgba(15,23,42,.45)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0),0 16px 38px rgba(15,23,42,.45)}}
 @media (max-width:960px){.hero,.cards-3,.cards-2,.contact-card{grid-template-columns:1fr}.topbar{flex-wrap:wrap}.nav{width:100%;overflow-x:auto}}
 @media (max-width:640px){.topbar{padding:.85rem;border-radius:16px}.hero{padding-top:2.6rem}.hero-copy h1{font-size:2.55rem}.stats{grid-template-columns:1fr}.top-actions{width:100%;justify-content:flex-start;flex-wrap:wrap}.whatsapp-button{right:16px;bottom:16px;padding:.85rem 1rem}}
+
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-top: 2rem;
+  }
+
+  .cards-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cards-2,
+  .contact-card {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .top-actions {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: min(100% - 1.25rem, 1120px);
+  }
+
+  .hero-copy h1 {
+    font-size: 2.4rem;
+    line-height: 1.1;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  .cards-3,
+  .cards-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions,
+  .contact-actions,
+  .badges,
+  .skills,
+  .stack {
+    gap: 0.6rem;
+  }
+
+  .btn,
+  .top-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .whatsapp-button {
+    right: 16px;
+    bottom: 16px;
+    padding: 0.85rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .topbar {
+    padding: 0.8rem;
+    border-radius: 14px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 2rem 0 2rem;
+  }
+
+  .hero-copy h1 {
+    font-size: 2rem;
+  }
+
+  .section-heading h2,
+  .contact-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .glass-card,
+  .project-card,
+  .contact-card,
+  .terminal {
+    border-radius: 18px;
+  }
+
+  .whatsapp-button span {
+    display: none;
+  }
+}
